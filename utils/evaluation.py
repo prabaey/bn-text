@@ -1,11 +1,14 @@
 import pandas as pd
 import numpy as np
 import itertools
-from sklearn.metrics import roc_curve, auc, precision_recall_curve, average_precision_score
-from pgmpy.inference.ExactInference import VariableElimination
 import matplotlib.pyplot as plt
-from torch.utils.data import DataLoader
+
+from sklearn.metrics import roc_curve, auc, precision_recall_curve, average_precision_score
+
+from pgmpy.inference.ExactInference import VariableElimination
+
 import torch
+from torch.utils.data import DataLoader
 
 def calc_prob_CPT(df, combo): 
     """

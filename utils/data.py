@@ -1,6 +1,12 @@
+import numpy as np 
+import pandas as pd
+
 from pgmpy.models import BayesianNetwork
 from pgmpy.factors.discrete import TabularCPD
 from pgmpy.sampling.Sampling import BayesianModelSampling
+
+import torch
+from torch.utils.data import Dataset
 
 class DiseaseModelGT():
 
@@ -63,11 +69,7 @@ class DiseaseModelGT():
         samples = samp_obj.forward_sample(size=N, seed=seed)
 
         return samples
-    
-from torch.utils.data import Dataset
-import torch
-import numpy as np 
-import pandas as pd
+
 
 class TabDataset(Dataset):
     """
@@ -126,19 +128,6 @@ class TabDataset(Dataset):
         """
         return sample {"season": tensor(), "pneu": tensor(), "inf": tensor(), "dysp": tensor(), "cough":tensor(), "nasal":tensor(), "text": tensor()}
         """
-
-        # sample = self.dataframe.iloc[index]
-        # dp = {}
-        # for var in self.class_map: 
-        #     if pd.isna(sample[var]):
-        #         val = torch.tensor(np.nan, dtype=torch.float, device=self.device)
-        #     else: 
-        #         val = torch.tensor(self.class_map[var][sample[var]], dtype=torch.float, device=self.device)
-        #     dp[var] = val
-
-
-        # dp["text"] = torch.tensor(sample[self.emb_type], device=self.device) # convert embedding to tensor
-        # dp["index"] = torch.tensor(index, device=self.device) # index to connect back to original dataframe
 
         dp = {var: self.preprocessed_data[var][index] for var in self.preprocessed_data.keys()}
         

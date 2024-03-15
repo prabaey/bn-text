@@ -40,9 +40,6 @@ def fit_BN_model(data):
 
     return model_full
 
-from pgmpy.models import BayesianNetwork
-from pgmpy.estimators import BayesianEstimator
-
 def fit_BN_plus_model(data): 
     """
     Fit Bayesian network to data WITH fever and pain variables

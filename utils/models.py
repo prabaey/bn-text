@@ -1,5 +1,5 @@
-from torch import nn
 import torch
+from torch import nn
 from torch.distributions import Bernoulli, MultivariateNormal
 
 class TextEmbClassifier(nn.Module):
@@ -536,7 +536,7 @@ class DiscriminativeModelAbl(DiscriminativeModel):
     """
     
     def __init__(self, n_emb, hidden_dim, dropout, seed, device): 
-        
+
         nn.Module.__init__(self)
 
         torch.manual_seed(seed)
