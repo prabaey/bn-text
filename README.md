@@ -25,7 +25,7 @@ In this paper, we propose two approaches to integrate text in Bayesian networks,
 We evaluate our models using simulation results for a primary care use case (diagnosis of pneumonia), for which we generate our own dataset. This dataset is based on both expert knowledge (used to build a ground truth Bayesian network) and ChatGPT for generation of a realistic textual description that fits the tabular portion of the sample. An example of what the samples in this dataset look like is shown below. 
 
 <p float="center">
-<img src="figures/dataset_example.png" width="500" />
+<img src="figures/dataset_example.png" width="750" />
 </p>
 
 ## Files
