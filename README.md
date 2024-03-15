@@ -1,4 +1,4 @@
-# bn-text
+# Clinical Reasoning over Tabular Data and Text with Bayesian Networks
 
 ## Summary
 
