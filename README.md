@@ -2,16 +2,19 @@
 
 ## Summary
 
-This repository contains the code for [Clinical Reasoning over Tabular Data and Text with Bayesian Networks](https://arxiv.org/abs/2403.09481). Should you reuse any ideas from this repository of the accompanying paper, please cite our work as follows: 
+This repository contains the code for [Clinical Reasoning over Tabular Data and Text with Bayesian Networks](https://arxiv.org/abs/2403.09481). Should you reuse any ideas from this repository or the accompanying paper, please cite our work as follows: 
 
 ```
-@misc{prabaey2024clinical,
-      title={Clinical Reasoning over Tabular Data and Text with Bayesian Networks},
-      author={Paloma Rabaey and Johannes Deleu and Stefan Heytens and Thomas Demeester},
-      year={2024},
-      eprint={2403.09481},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI}
+@InProceedings{prabaey_clinical_reasoning,
+  author="Rabaey, Paloma
+  and Deleu, Johannes
+  and Heytens, Stefan
+  and Demeester, Thomas",
+  title="Clinical Reasoning over Tabular Data and Text with Bayesian Networks",
+  booktitle="Artificial Intelligence in Medicine",
+  year="2024",
+  publisher="Springer Nature Switzerland",
+  pages="229--250",
 }
 ```
 
